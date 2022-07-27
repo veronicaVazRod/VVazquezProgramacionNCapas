@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="6df189e037e04944acdaa868206d2d47" Name="Diagram1">
+        <EntityTypeShape EntityType="VVazquezProgramacionNCapasModel.Area" Width="1.5" PointX="0.75" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="VVazquezProgramacionNCapasModel.Departamento" Width="1.5" PointX="3" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="VVazquezProgramacionNCapasModel.Producto" Width="1.5" PointX="5.25" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="VVazquezProgramacionNCapasModel.Proveedor" Width="1.5" PointX="3" PointY="5.375" IsExpanded="true" />
+        <AssociationConnector Association="VVazquezProgramacionNCapasModel.FK__Departame__IdAre__59063A47" ManuallyRouted="false" />
+        <AssociationConnector Association="VVazquezProgramacionNCapasModel.FK__Producto__IdDepa__59FA5E80" ManuallyRouted="false" />
+        <AssociationConnector Association="VVazquezProgramacionNCapasModel.FK__Producto__IdProv__44FF419A" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="VVazquezProgramacionNCapasModel.Rol" Width="1.5" PointX="5.375" PointY="6.125" />
+        <EntityTypeShape EntityType="VVazquezProgramacionNCapasModel.Usuario" Width="1.5" PointX="7.625" PointY="5" />
+        <AssociationConnector Association="VVazquezProgramacionNCapasModel.FK__Usuario__IdRol__29572725" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
