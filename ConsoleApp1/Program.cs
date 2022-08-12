@@ -10,18 +10,19 @@ namespace PL
     {
         static void Main(string[] args)
         {
-            // PL.Producto.Add();
+            //PL.Producto.Add();
             //PL.Producto.Update();
-            //PL.Producto.Delete();
+           //PL.Producto.Delete();
             // PL.Producto.GetAll(); // Llama al metodo GetAll dentro de la capa PL 
             //PL.Producto.GetById();
 
 
-            PL.Usuario.Add();
+          PL.Usuario.Add();
             PL.Usuario.Delete();
-           // PL.Usuario.GetById();
-            //PL.Usuario.GetAll();
-         //  PL.Usuario.Update();
+          // PL.Usuario.RolGetAll();
+        //   PL.Usuario.GetById();
+        //    PL.Usuario.GetAll();
+         PL.Usuario.Update();
          
 
 

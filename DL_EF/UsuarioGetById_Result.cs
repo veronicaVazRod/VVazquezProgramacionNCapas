@@ -13,9 +13,9 @@ namespace DL_EF
     
     public partial class UsuarioGetById_Result
     {
-        public int IdUsuario { get; set; }
-        public string Nombre { get; set; }
         public Nullable<int> IdRol { get; set; }
+        public string NombreRol { get; set; }
+        public string Nombre { get; set; }
         public string UserName { get; set; }
         public string ApellidoPaterno { get; set; }
         public string ApellidoMaterno { get; set; }
@@ -27,5 +27,19 @@ namespace DL_EF
         public Nullable<System.DateTime> FechaNacimiento { get; set; }
         public string CURP { get; set; }
         public byte[] Imagen { get; set; }
+        public int IdUsuario { get; set; }
+        public int IdDireccion { get; set; }
+        public string Calle { get; set; }
+        public string NumeroInterior { get; set; }
+        public string NumeroExterior { get; set; }
+        public Nullable<int> IdColonia { get; set; }
+        public int IdPais { get; set; }
+        public string NombrePais { get; set; }
+        public string NombreEstado { get; set; }
+        public string CodigoPostal { get; set; }
+        public string NombreColonia { get; set; }
+        public int IdMunicipio { get; set; }
+        public string NombreMunicipio { get; set; }
+        public Nullable<int> IdEstado { get; set; }
     }
 }

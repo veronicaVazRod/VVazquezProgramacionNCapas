@@ -40,17 +40,27 @@ namespace PL
             usuario.FechaNacimiento = Console.ReadLine();
             Console.WriteLine("Ingrese el CURP: ");
             usuario.CURP = Console.ReadLine();
-           // Console.WriteLine("Ingrese la imagen: ");
-          //  usuario.Imagen =byte[].Parse(Console.ReadLine());
+            Console.WriteLine("Ingrese la imagen: ");
+            usuario.Imagen = (Console.ReadLine());
+            usuario.Direccion = new ML.Direccion();
+            Console.WriteLine("ingrese calle");
+            usuario.Direccion.Calle=(Console.ReadLine());
+            Console.WriteLine("ingrese Numero Interior");
+            usuario.Direccion.NumeroInterior = (Console.ReadLine());
+            Console.WriteLine("ingrese Numero Exterior");
+            usuario.Direccion.NumeroExterior = (Console.ReadLine());
+
+
+            usuario.Direccion.Colonia = new ML.Colonia();
+
+            Console.WriteLine("ingrese IdColonia");
+            usuario.Direccion.Colonia.IdColonia = int.Parse (Console.ReadLine());
 
 
 
 
 
-
-
-
-           // ML.Result result = BL.Usuario.AddSP(usuario);//Linea que entra a EF
+            // ML.Result result = BL.Usuario.AddSP(usuario);//Linea que entra a EF
             ML.Result result = BL.Usuario.Add(usuario);
 
             if (result.Correct)
@@ -100,10 +110,25 @@ namespace PL
             usuario.FechaNacimiento = Console.ReadLine();
             Console.WriteLine("Ingrese el CURP: ");
             usuario.CURP = Console.ReadLine();
-       //     Console.WriteLine("Ingrese la imagen: ");
-        //    usuario.Imagen = Console.ReadLine(Array[]);
+            Console.WriteLine("Ingrese la imagen: ");
+          usuario.Imagen = Console.ReadLine();
 
-        //  ML.Result result = BL.Usuario.UpdateSP(usuario);
+            usuario.Direccion = new ML.Direccion();
+            Console.WriteLine("ingrese calle");
+            usuario.Direccion.Calle = (Console.ReadLine());
+            Console.WriteLine("ingrese Numero Interior");
+            usuario.Direccion.NumeroInterior = (Console.ReadLine());
+            Console.WriteLine("ingrese Numero Exterior");
+            usuario.Direccion.NumeroExterior = (Console.ReadLine());
+
+
+            usuario.Direccion.Colonia = new ML.Colonia();
+
+            Console.WriteLine("ingrese IdColonia");
+            usuario.Direccion.Colonia.IdColonia = int.Parse(Console.ReadLine());
+
+
+            //  ML.Result result = BL.Usuario.UpdateSP(usuario);
             ML.Result result = BL.Usuario.Update(usuario);
             if (result.Correct)
             {
@@ -165,6 +190,21 @@ namespace PL
                     Console.WriteLine("La fecha de nacimiento del usuario es: " + usuario.FechaNacimiento);
                     Console.WriteLine("La imagen es: " + usuario.Imagen);
 
+                 
+                    Console.WriteLine("ingrese calle" + usuario.Direccion.Calle);
+                   
+                    Console.WriteLine("ingrese Numero Interior" + usuario.Direccion.NumeroInterior);
+                    
+                    Console.WriteLine("ingrese Numero Exterior" + usuario.Direccion.NumeroExterior);
+                   
+
+
+  
+
+                    Console.WriteLine("ingrese IdColonia" + usuario.Direccion.Colonia.IdColonia);
+                 
+
+
                 }
             }
             else //Entra a este bloque si el método de BL no funciono correctamente
@@ -202,6 +242,18 @@ namespace PL
                 Console.WriteLine("El CURP del usuario es: " + usuario.CURP);
                 Console.WriteLine("La fecha de nacimiento del usuario es: " + usuario.FechaNacimiento);
                 Console.WriteLine("La imagen es: " + usuario.Imagen);
+
+                Console.WriteLine("ingrese calle" + usuario.Direccion.Calle);
+
+                Console.WriteLine("ingrese Numero Interior" + usuario.Direccion.NumeroInterior);
+
+                Console.WriteLine("ingrese Numero Exterior" + usuario.Direccion.NumeroExterior);
+
+
+
+
+
+                Console.WriteLine("ingrese IdColonia" + usuario.Direccion.Colonia.IdColonia);
 
 
             }

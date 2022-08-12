@@ -54,7 +54,34 @@
       <DependentUpon>VVazquezProgramacionNCapas.tt</DependentUpon>
     </Compile>
     <Compile Include="Class1.cs" />
+    <Compile Include="Colonia.cs">
+      <DependentUpon>VVazquezProgramacionNCapas.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ColoniaGetByIdMunicipio_Result.cs">
+      <DependentUpon>VVazquezProgramacionNCapas.tt</DependentUpon>
+    </Compile>
     <Compile Include="Departamento.cs">
+      <DependentUpon>VVazquezProgramacionNCapas.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Direccion.cs">
+      <DependentUpon>VVazquezProgramacionNCapas.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Estado.cs">
+      <DependentUpon>VVazquezProgramacionNCapas.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EstadoGetByIdPais_Result.cs">
+      <DependentUpon>VVazquezProgramacionNCapas.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Municipio.cs">
+      <DependentUpon>VVazquezProgramacionNCapas.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MunicipioGetByIdEstado_Result.cs">
+      <DependentUpon>VVazquezProgramacionNCapas.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Pai.cs">
+      <DependentUpon>VVazquezProgramacionNCapas.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PaisGetAll_Result.cs">
       <DependentUpon>VVazquezProgramacionNCapas.tt</DependentUpon>
     </Compile>
     <Compile Include="Producto.cs">
@@ -73,19 +100,16 @@
     <Compile Include="Rol.cs">
       <DependentUpon>VVazquezProgramacionNCapas.tt</DependentUpon>
     </Compile>
+    <Compile Include="RolGetAll_Result.cs">
+      <DependentUpon>VVazquezProgramacionNCapas.tt</DependentUpon>
+    </Compile>
     <Compile Include="Usuario.cs">
       <DependentUpon>VVazquezProgramacionNCapas.tt</DependentUpon>
     </Compile>
     <Compile Include="UsuarioGetAll_Result.cs">
       <DependentUpon>VVazquezProgramacionNCapas.tt</DependentUpon>
     </Compile>
-    <Compile Include="UsuarioGetAll_Result1.cs">
-      <DependentUpon>VVazquezProgramacionNCapas.tt</DependentUpon>
-    </Compile>
     <Compile Include="UsuarioGetById_Result.cs">
-      <DependentUpon>VVazquezProgramacionNCapas.tt</DependentUpon>
-    </Compile>
-    <Compile Include="UsuarioGetById_Result1.cs">
       <DependentUpon>VVazquezProgramacionNCapas.tt</DependentUpon>
     </Compile>
     <Compile Include="VVazquezProgramacionNCapas.Context.cs">

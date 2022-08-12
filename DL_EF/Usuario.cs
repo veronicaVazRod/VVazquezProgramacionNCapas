@@ -14,6 +14,12 @@ namespace DL_EF
     
     public partial class Usuario
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public Usuario()
+        {
+            this.Direccions = new HashSet<Direccion>();
+        }
+    
         public string Nombre { get; set; }
         public int IdUsuario { get; set; }
         public Nullable<int> IdRol { get; set; }
@@ -27,8 +33,10 @@ namespace DL_EF
         public string Celular { get; set; }
         public Nullable<System.DateTime> FechaNacimiento { get; set; }
         public string CURP { get; set; }
-        public byte[] Imagen { get; set; }
+        public string Imagen { get; set; }
     
         public virtual Rol Rol { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Direccion> Direccions { get; set; }
     }
 }

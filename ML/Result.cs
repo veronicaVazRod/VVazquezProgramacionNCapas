@@ -14,5 +14,6 @@ namespace ML
         public List<object> Objects { set; get; }
         public string Messages { set; get; }
         public Exception Ex { set; get; }
+        public string ErrorMessage { get; set; }
     }
 }

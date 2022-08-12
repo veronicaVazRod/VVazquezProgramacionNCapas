@@ -40,7 +40,10 @@
             <td>FechaNacimiento</td>
             <td>CURP</td>
             <td>Imagen</td>
-          
+            <td>NombreRol</td>
+            <td>Direccion</td>
+            <td>Pais</td>
+
             <td>Eliminar</td>
         </tr>
     </thead>
@@ -48,6 +51,7 @@
         @foreach (ML.Usuario usuario in Model.Usuarios)
         {
             <tr>
+
                 <td><a class="btn btn-warning glyphicon glyphicon-edit" href="@Url.Action("Form", "Usuario", new { IdUsuario = usuario.IdUsuario })"></a></td>
                 <td class="hidden">@usuario.IdUsuario</td>
 
@@ -62,18 +66,23 @@
                 <td>@usuario.FechaNacimiento</td>
                 <td>@usuario.CURP</td>
                 <td>@usuario.Imagen</td>
+                <td>@usuario.Rol.Nombre</td>
+                <td>
+                    @usuario.Direccion.Calle
+                @usuario.Direccion.NumeroInterior
+                @usuario.Direccion.NumeroExterior
+                @usuario.Direccion.Colonia.Nombre
+                @usuario.Direccion.Colonia.CodigoPostal
+                @usuario.Direccion.Colonia.Municipio.Nombre
+                @usuario.Direccion.Colonia.Municipio.Estado.Nombre
+            </td>
+            <td> @usuario.Direccion.Colonia.Municipio.Estado.Pais.Nombre </td>
 
 
-                <td><a class="btn btn-danger glyphicon glyphicon-trash" href="@Url.Action("Delete", "Usuario", new { IdUsuario= usuario.IdUsuario})" onclick="return confirm('Estas seguro que deseas eliminar este registro?');"></a></td>
-            </tr>
-        }
 
+            <td><a class="btn btn-danger glyphicon glyphicon-trash" href="@Url.Action("Delete", "Usuario", new { IdUsuario= usuario.IdUsuario})" onclick="return confirm('Estas seguro que deseas eliminar este registro?');"></a></td>
+        </tr>
+    }
 
-
-
-
-
-
-
-        </tbody>
-    </table>
+    </tbody>
+</table>

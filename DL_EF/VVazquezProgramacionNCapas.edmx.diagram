@@ -15,6 +15,16 @@
         <EntityTypeShape EntityType="VVazquezProgramacionNCapasModel.Rol" Width="1.5" PointX="5.375" PointY="6.125" />
         <EntityTypeShape EntityType="VVazquezProgramacionNCapasModel.Usuario" Width="1.5" PointX="7.625" PointY="5" />
         <AssociationConnector Association="VVazquezProgramacionNCapasModel.FK__Usuario__IdRol__29572725" />
+        <EntityTypeShape EntityType="VVazquezProgramacionNCapasModel.Colonia" Width="1.5" PointX="14.125" PointY="1.125" />
+        <EntityTypeShape EntityType="VVazquezProgramacionNCapasModel.Direccion" Width="1.5" PointX="16.375" PointY="3.875" />
+        <EntityTypeShape EntityType="VVazquezProgramacionNCapasModel.Estado" Width="1.5" PointX="9.625" PointY="1.25" />
+        <EntityTypeShape EntityType="VVazquezProgramacionNCapasModel.Municipio" Width="1.5" PointX="11.875" PointY="1.25" />
+        <EntityTypeShape EntityType="VVazquezProgramacionNCapasModel.Pai" Width="1.5" PointX="7.375" PointY="1.375" />
+        <AssociationConnector Association="VVazquezProgramacionNCapasModel.FK__Colonia__IdMunic__6D0D32F4" />
+        <AssociationConnector Association="VVazquezProgramacionNCapasModel.FK__Direccion__IdUsu__123EB7A3" />
+        <AssociationConnector Association="VVazquezProgramacionNCapasModel.FK__Direccion__IdUsu__1332DBDC" />
+        <AssociationConnector Association="VVazquezProgramacionNCapasModel.FK__Estado__IdPais__656C112C" />
+        <AssociationConnector Association="VVazquezProgramacionNCapasModel.FK__Municipio__IdEst__6B24EA82" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>
